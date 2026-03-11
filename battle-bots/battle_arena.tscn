@@ -40,7 +40,8 @@ shape = SubResource("WorldBoundaryShape2D_70rpv")
 position = Vector2(960, 1080)
 collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Bottom" unique_id=550392877]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Bottom"]
+position = Vector2(24, -120)
 shape = SubResource("WorldBoundaryShape2D_70rpv")
 
 [node name="Top" type="StaticBody2D" parent="Bariers" unique_id=2143826842]
