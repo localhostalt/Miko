@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://baf1xatkw0m7f"]
+[gd_scene format=3 uid="uid://baf1xatkw0m7f"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_70rpv"]
 
@@ -23,253 +23,259 @@ fill_from = Vector2(1, 0)
 fill_to = Vector2(0, 0)
 metadata/_snap_count = 13
 
-[node name="Battle Arena" type="Node2D"]
+[node name="Battle Arena" type="Node2D" unique_id=1890659493]
 metadata/_edit_lock_ = true
 
-[node name="Bariers" type="Node2D" parent="."]
+[node name="Bariers" type="Node2D" parent="." unique_id=746937375]
 
-[node name="Left" type="StaticBody2D" parent="Bariers"]
+[node name="Left" type="StaticBody2D" parent="Bariers" unique_id=1454864610]
 position = Vector2(0, 448)
 rotation = 1.5707964
+collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Left"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Left" unique_id=2118736409]
 shape = SubResource("WorldBoundaryShape2D_70rpv")
 
-[node name="Bottom" type="StaticBody2D" parent="Bariers"]
+[node name="Bottom" type="StaticBody2D" parent="Bariers" unique_id=56212576]
 position = Vector2(960, 1080)
+collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Bottom"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Bottom" unique_id=550392877]
 shape = SubResource("WorldBoundaryShape2D_70rpv")
 
-[node name="Top" type="StaticBody2D" parent="Bariers"]
+[node name="Top" type="StaticBody2D" parent="Bariers" unique_id=2143826842]
 position = Vector2(832, 0)
 rotation = 3.1415927
+collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Top"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Top" unique_id=787558825]
 shape = SubResource("WorldBoundaryShape2D_70rpv")
 
-[node name="Right" type="StaticBody2D" parent="Bariers"]
+[node name="Right" type="StaticBody2D" parent="Bariers" unique_id=116036725]
 position = Vector2(1920, 448)
 rotation = 1.5707964
+collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Right"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bariers/Right" unique_id=2080711953]
 rotation = -3.1415927
 shape = SubResource("WorldBoundaryShape2D_70rpv")
 
-[node name="Holes" type="Node2D" parent="."]
+[node name="Holes" type="Node2D" parent="." unique_id=259764009]
 
-[node name="Hole" type="StaticBody2D" parent="Holes"]
+[node name="Hole" type="StaticBody2D" parent="Holes" unique_id=1567248951]
 position = Vector2(896.00006, 192)
 scale = Vector2(3, 3)
 collision_layer = 8
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Holes/Hole"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Holes/Hole" unique_id=1227745130]
 shape = SubResource("RectangleShape2D_70rpv")
 
-[node name="Sprite2D" type="Sprite2D" parent="Holes/Hole"]
+[node name="Sprite2D" type="Sprite2D" parent="Holes/Hole" unique_id=2047649474]
 position = Vector2(3.0517578e-05, -3.8146973e-06)
 scale = Vector2(2.000001, 1.9999999)
 texture = SubResource("GradientTexture2D_70rpv")
 
-[node name="Hole2" type="StaticBody2D" parent="Holes"]
+[node name="Hole2" type="StaticBody2D" parent="Holes" unique_id=1664561320]
 position = Vector2(864, 864)
 scale = Vector2(1.5, 1.5)
 collision_layer = 8
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Holes/Hole2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Holes/Hole2" unique_id=262544774]
 shape = SubResource("RectangleShape2D_70rpv")
 
-[node name="Sprite2D" type="Sprite2D" parent="Holes/Hole2"]
+[node name="Sprite2D" type="Sprite2D" parent="Holes/Hole2" unique_id=69523681]
 position = Vector2(3.0517578e-05, -3.8146973e-06)
 scale = Vector2(2.000001, 1.9999999)
 texture = SubResource("GradientTexture2D_70rpv")
 
-[node name="Walls" type="Node2D" parent="."]
+[node name="Walls" type="Node2D" parent="." unique_id=1007793853]
 
-[node name="Wall" type="StaticBody2D" parent="Walls"]
+[node name="Wall" type="StaticBody2D" parent="Walls" unique_id=181059180]
 position = Vector2(864, 755)
 rotation = 1.5707964
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall" unique_id=1615132762]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall" unique_id=896878613]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall2" type="StaticBody2D" parent="Walls"]
+[node name="Wall2" type="StaticBody2D" parent="Walls" unique_id=1859315819]
 position = Vector2(1248, 880)
 rotation = 1.5707964
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall2" unique_id=1740749606]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall2"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall2" unique_id=83628130]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall3" type="StaticBody2D" parent="Walls"]
+[node name="Wall3" type="StaticBody2D" parent="Walls" unique_id=1278534404]
 position = Vector2(1168, 768)
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall3" unique_id=796184759]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall3"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall3" unique_id=665886535]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall4" type="StaticBody2D" parent="Walls"]
+[node name="Wall4" type="StaticBody2D" parent="Walls" unique_id=95114496]
 position = Vector2(495.99994, 512)
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall4" unique_id=71151010]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall4"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall4" unique_id=1632543324]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall5" type="StaticBody2D" parent="Walls"]
+[node name="Wall5" type="StaticBody2D" parent="Walls" unique_id=89591868]
 position = Vector2(416, 400)
 rotation = -1.5707964
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall5"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall5" unique_id=75079456]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall5"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall5" unique_id=1544507117]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall6" type="StaticBody2D" parent="Walls"]
+[node name="Wall6" type="StaticBody2D" parent="Walls" unique_id=1362629914]
 position = Vector2(1440, 496)
 rotation = 1.5707964
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall6"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall6" unique_id=885171728]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall6"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall6" unique_id=739567811]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall7" type="StaticBody2D" parent="Walls"]
+[node name="Wall7" type="StaticBody2D" parent="Walls" unique_id=1926037814]
 position = Vector2(1632, 496)
 rotation = 1.5707964
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall7"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall7" unique_id=78059458]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall7"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall7" unique_id=161988737]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall8" type="StaticBody2D" parent="Walls"]
+[node name="Wall8" type="StaticBody2D" parent="Walls" unique_id=746294089]
 position = Vector2(1440, 272)
 rotation = 1.5707964
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall8"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall8" unique_id=2001435437]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall8"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall8" unique_id=1395619748]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall9" type="StaticBody2D" parent="Walls"]
+[node name="Wall9" type="StaticBody2D" parent="Walls" unique_id=1516361815]
 position = Vector2(1632, 272)
 rotation = 1.5707964
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall9"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall9" unique_id=1303599437]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall9"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall9" unique_id=1843002575]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall10" type="StaticBody2D" parent="Walls"]
+[node name="Wall10" type="StaticBody2D" parent="Walls" unique_id=2097848591]
 position = Vector2(208, 865)
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall10"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall10" unique_id=1552223950]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall10"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall10" unique_id=548760475]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="Wall11" type="StaticBody2D" parent="Walls"]
+[node name="Wall11" type="StaticBody2D" parent="Walls" unique_id=1567964977]
 position = Vector2(464, 865)
 scale = Vector2(0.25, 1.5)
 collision_layer = 4
-collision_mask = 3
+collision_mask = 0
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall11"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall11" unique_id=1869045383]
 shape = SubResource("RectangleShape2D_bx1f6")
 
-[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall11"]
+[node name="Sprite2D" type="Sprite2D" parent="Walls/Wall11" unique_id=2010375679]
 position = Vector2(-6.1035156e-05, -0.5)
 scale = Vector2(1.9999981, 2.015625)
 texture = SubResource("GradientTexture2D_bx1f6")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=417890863]
 
-[node name="HealthBar1" type="ProgressBar" parent="CanvasLayer"]
+[node name="HealthBar1" type="ProgressBar" parent="CanvasLayer" unique_id=524352311]
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 504.0
 offset_bottom = 56.0
 rounded = true
 
-[node name="HealthBar2" type="ProgressBar" parent="CanvasLayer"]
+[node name="HealthBar2" type="ProgressBar" parent="CanvasLayer" unique_id=1064383221]
 offset_left = 1416.0
 offset_top = 8.0
 offset_right = 1912.0
